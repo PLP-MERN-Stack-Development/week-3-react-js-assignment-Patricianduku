@@ -1,71 +1,134 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19855076&assignment_repo_type=AssignmentRepo)
-# React.js and Tailwind CSS Assignment
+# Task Manager App
 
-This assignment focuses on building a responsive React application using JSX and Tailwind CSS, implementing component architecture, state management, hooks, and API integration.
+A modern React-based task management application that supports:
 
-## Assignment Overview
+* ✅ Light/Dark theme toggle with persistence
+* ✅ Task creation, filtering, deletion
+* ✅ User counter example (state handling)
+* ✅ Responsive design with Tailwind CSS
+* ✅ React Router v6+ routing
+* ✅ Fetch demo (placeholder for API page)
 
-You will:
-1. Set up a React project with Vite and Tailwind CSS
-2. Create reusable UI components
-3. Implement state management using React hooks
-4. Integrate with external APIs
-5. Style your application using Tailwind CSS
+---
 
-## Getting Started
-
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Start the development server:
-   ```
-   npm run dev
-   ```
-
-## Files Included
-
-- `Week3-Assignment.md`: Detailed assignment instructions
-- Starter files for your React application:
-  - Basic project structure
-  - Pre-configured Tailwind CSS
-  - Sample component templates
-
-## Requirements
-
-- Node.js (v18 or higher)
-- npm or yarn
-- Modern web browser
-- Code editor (VS Code recommended)
-
-## Project Structure
+## 📁 Project Structure
 
 ```
-src/
-├── components/       # Reusable UI components
-├── pages/           # Page components
-├── hooks/           # Custom React hooks
-├── context/         # React context providers
-├── api/             # API integration functions
-├── utils/           # Utility functions
-└── App.jsx          # Main application component
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Card.jsx
+│   │   └── Button.jsx
+│   ├── context/
+│   │   └── ThemeContext.jsx
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── Tasks.jsx
+│   │   └── ApiData.jsx
+│   ├── App.jsx
+│   ├── Layout.jsx
+│   ├── main.jsx
+│   └── index.css
+└── package.json
 ```
 
-## Submission
+---
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+## ⚙️ Tech Stack
 
-1. Complete all required components and features
-2. Implement proper state management with hooks
-3. Integrate with at least one external API
-4. Style your application with Tailwind CSS
-5. Deploy your application and add the URL to your README.md
+* [React 19](https://react.dev/)
+* [React Router](https://reactrouter.com/)
+* [Tailwind CSS v4](https://tailwindcss.com/)
+* Vite for fast dev builds
 
-## Resources
+---
 
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Router Documentation](https://reactrouter.com/) 
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/PLP-MERN-Stack-Development/week-3-react-js-assignment-Patricianduku.git
+cd task-manager-app
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Run Locally
+
+```bash
+npm run dev
+```
+
+Visit: [http://localhost:5173](http://localhost:5173)
+Netlify: [text](https://sensational-banoffee-d9915f.netlify.app/)
+---
+
+## 🌐 Deployment Instructions
+
+### Option 1: Deploy on Vercel
+
+1. Push your code to GitHub.
+2. Go to [https://vercel.com](https://vercel.com) and import your GitHub repo.
+3. Set the build command: `npm run build`
+4. Set the output directory: `dist`
+5. Deploy 🎉
+
+### Option 2: Deploy on Netlify
+
+1. Push code to GitHub.
+2. Go to [https://netlify.com](https://netlify.com) and connect your repo.
+3. Use build command: `npm run build`
+4. Publish directory: `dist`
+5. Done!
+
+---
+
+## 🧪 Features
+
+### ✅ Theme Toggle
+
+* Click 🌙/☀️ button in navbar
+* Theme is stored in `localStorage`
+
+### ✅ Task Management
+
+* Add, delete, and filter tasks
+* Stored in `localStorage`
+
+### ✅ Navigation
+
+* `/` — Home (counter)
+* `/tasks` — Task Manager
+* `/api` — Placeholder for future API data (e.g. fetch users)
+
+---
+## screenshots:
+Home: screenshot1.png
+Tasks: screenshot2.png
+users: screenshot.png
+
+## 🔧 Future Improvements
+
+* 🔐 Auth system
+* 🔄 API integration on `/api`
+* 🗃️ Persistent backend storage
+* 📱 Improved mobile layout
+
+---
+
+## 📄 License
+
+[MIT](LICENSE)
+
+---
+
+## Author
+
+Built by \Patricinduku
