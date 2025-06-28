@@ -1,0 +1,8 @@
+/* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-lightblue dark:bg-gray-900 text-gray-900 dark:text-white;
+}
